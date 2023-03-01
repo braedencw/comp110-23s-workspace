@@ -1,12 +1,15 @@
 """EX04 - Utility Functions."""
 __author__ = "730405020"
 
+
 def all(x: list[int], a: int) -> bool:
     """States whether or not the final integer is equal to the others."""
+    if len(x) == 0:
+        return False
     idx: int = 0
     while idx <= len(x) - 1:
         if a == x[idx]:
-            idx= idx + 1
+            idx = idx + 1
         else:
             return False
     return True
@@ -23,6 +26,7 @@ def max(y: list[int]) -> int:
             number: int = y[idx]
         idx = idx + 1
     return number
+
         
 def is_equal(list_1: list[int], list_2: list[int]) -> bool:
     """States whether or not the lists are equal at every element."""
