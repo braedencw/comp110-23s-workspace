@@ -7,8 +7,8 @@ import pytest
 
 
 def test_error() -> None:
+    """Edge case: will function return 'KeyError' if there are two same values in dictionary?"""
     with pytest.raises(KeyError):
-        """Edge case: will function return 'KeyError' if there are two same values in dictionary?"""
         test_dict: dict[str, str] = {'kris': 'jordan', 'michael': 'jordan'}
         invert(test_dict)
 

@@ -41,9 +41,3 @@ def count(list: list[str]) -> dict[str, int]:
         else:
             dictionary[item] = 1
     return dictionary 
-
-        
-
-
-    
-
