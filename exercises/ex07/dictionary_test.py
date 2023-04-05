@@ -45,17 +45,17 @@ def test_favorite_color_2() -> None:
 
 def test_empty() -> None:
     """Edge case: will the function return an empty dictionary if list is empty?"""
-    test_list: list[str] = ()
+    test_list: list[str] = []
     assert count(test_list) == {}
 
 
 def test_count_1() -> None:
     """Use case: will the function return an dictionary showing how many times an item was in the list?"""
-    test_list: list[str] = ('yellow', 'yellow', 'blue')
+    test_list: list[str] = ['yellow', 'yellow', 'blue']
     assert count(test_list) == {'yellow': 2, 'blue': 1}
 
 
 def test_count_2() -> None:
     """Use case: will the function return an dictionary showing how many times an item was in the list?"""
-    test_list: list[str] = ('yellow', 'yellow', 'blue', 'blue')
+    test_list: list[str] = ['yellow', 'yellow', 'blue', 'blue']
     assert count(test_list) == {'yellow': 2, 'blue': 2}

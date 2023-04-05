@@ -16,7 +16,7 @@ def invert(dictionary: dict[str, str]) -> dict[str, str]:
 
 def favorite_color(dictionary: dict[str, str]) -> str:
     """Determines and returns favorite color from dictionary."""
-    new_dict: dict[str, str] = {}
+    new_dict: dict[str, int] = {}
     for person in dictionary:
         color = dictionary[person]
         if color in new_dict:
